@@ -12,7 +12,7 @@ cache:
 
 before_install:
   - echo "Start Build for Hexo Blog, kmahyyg.github.io"
-  - rm package-json.lock
+  - rm package-lock.json
   - rm package.json
 
 install:
