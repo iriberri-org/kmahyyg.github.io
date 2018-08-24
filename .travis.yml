@@ -36,5 +36,7 @@ install:
 script:
   - which hexo
   - hexo g --debug
+  - git status
+  - git diff
 
 
