@@ -13,6 +13,7 @@ before_install:
   - echo "Start Build for Hexo Blog, kmahyyg.github.io"
   - ls -al /home/travis/build/iriberri-org/kmahyyg.github.io/node_modules
   - ls -al /home/travis/build/iriberri-org/kmahyyg.github.io/node_modules/hexo
+  - ls -al /home/travis/build/iriberri-org/kmahyyg.github.io/node_modules/.bin
 
 install:
   - npm install hexo-cli -g --save
