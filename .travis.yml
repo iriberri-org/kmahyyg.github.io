@@ -12,8 +12,8 @@ cache:
 
 before_install:
   - echo "Start Build for Hexo Blog, kmahyyg.github.io"
-#  - rm package-json.lock
-#  - rm package.json
+  - rm package-json.lock
+  - rm package.json
 
 install:
   - npm install hexo-cli -g
