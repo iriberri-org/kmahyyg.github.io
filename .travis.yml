@@ -19,31 +19,4 @@ install:
 script:
   - hexo g
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  keep-history: true
-  github-token: $GITHUB_PERTKN
-  on:
-    branch: raw
-  target-branch: master
-  fqdn: blog.kmahyyg.xyz
-  project-name: kmahyyg.github.io
-  committer-from-gh: true
-  local-dir: public
 
-after_deploy:
-  - ./synctocoding.sh
-
-env:
-  global:
-    # Coding Pages
-    - CO_REF: git.coding.net/kmahyyg/kmahyyg.git
-
-notifications:
-  webhooks:
-    urls:
-      - https://integrations.bonbotics.io/travis/webhook/McReXwoNYgeQzXAr10StqlRMROG9mkkwo61TkaJU9tE
-    on_success: always
-    on_failure: always
-    on_start: never
