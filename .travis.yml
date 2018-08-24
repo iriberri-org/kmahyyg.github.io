@@ -28,6 +28,7 @@ install:
    - npm install hexo hexo-deployer-git hexo-prism-plugin hexo-helper-qrcode hexo-generator-search hexo-generator-sitemap hexo-generator-feed --save 
   
   
+  
 script:
   - which hexo
   - hexo g --debug
